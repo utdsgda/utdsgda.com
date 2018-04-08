@@ -85,7 +85,11 @@ class SendVoteCodes extends Command
 
             //////////////// Mail vote codes ////////////////
 
-            Mail::to($member->email)->send(new \App\Mail\VoteCode($election, $voteCode, $member));
+            try {
+                Mail::to($member->email)->send(new \App\Mail\VoteCode($election, $voteCode, $member));
+            } catch (Exception $e) {
+                $this->error('Unable to send vote code email to ' . $member->email . ', Continuing anyway...');
+            }
         }
     }
 }
