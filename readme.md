@@ -4,6 +4,10 @@ This is the Laravel-based web app that powers the SGDA website.
 
 Please pardon the mess as we upgrade our codebase.
 
+## Viewing Election Results
+
+Visit [utdsgda.com/election-results](https://utdsgda.com/election-results)
+
 ## Artisan Console Commands
 
 Navigate to the app root (on live, this is /var/www/utdsgda.com/current)

@@ -15,6 +15,9 @@ Route::resource('vote', 'VoteController')->only([
     'store', 'show'
 ]);
 
+Route::get('election-results', 'ElectionResultsController@index');
+Route::get('election-results/{id}', 'ElectionResultsController@show');
+
 /*
 |--------------------------------------------------------------------------
 | Route Definitions from old codebase
