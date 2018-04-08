@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>{{ $subject }}</title>
+        <title>Your Vote Code for the SGDA Election</title>
         <style type="text/css">
       /* /\/\/\/\/\/\/\/\/ CLIENT-SPECIFIC STYLES /\/\/\/\/\/\/\/\/ */
       #outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
@@ -450,11 +450,11 @@
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
                                         <tr>
                                             <td valign="top" class="bodyContent" mc:edit="body_content">
-                                                <h1>{{ $subject }}</h1>
+                                                <h1>{{ $election->name }}</h1>
 
                                                 <br />
 
-                                                Hi there {{ $memberName }},
+                                                Hi there {{ $member->name }},
 
                                                 <br />
                                                 <br />
@@ -464,7 +464,7 @@
                                                 <br />
                                                 <br />
 
-                                                <a href="https://utdsgda.com/vote/S2018-officer-election?code={{ $voteCode }}">https://utdsgda.com/vote/S2018-officer-election?code={{ $voteCode }}</a>
+                                                <a href="https://utdsgda.com/vote/{{ $election->slug }}?code={{ $voteCode->text }}">utdsgda.com/vote/{{ $election->slug }}?code={{ $voteCode->text }}</a>
 
                                                 <br />
                                                 <br />

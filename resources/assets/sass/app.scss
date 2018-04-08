@@ -1,14 +1,48 @@
-
 // Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+// @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 
 // Variables
 @import "variables";
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+// @import '~bootstrap/scss/bootstrap';
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+.vote h1 {
+  font-size: 24px;
+}
+
+.vote h2 {
+  font-size: 16px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.vote .vote-form {
+  button {
+    margin-top: 25px;
+  }
+
+  .radio {
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    padding: 10px;
+
+    background: #ddd;
+
+    input {
+      margin-left: 0;
+      top: 27px;
+    }
+
+    label {
+      padding-left: 30px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      font-size: 14px;
+
+      width: 100%;
+    }
+  }
 }

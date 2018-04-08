@@ -11,6 +11,10 @@
 |
 */
 
+Route::resource('vote', 'VoteController')->only([
+    'store', 'show'
+]);
+
 /*
 |--------------------------------------------------------------------------
 | Route Definitions from old codebase

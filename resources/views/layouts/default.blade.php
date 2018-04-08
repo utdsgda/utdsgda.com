@@ -21,7 +21,7 @@
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="/old-assets/css/sgda.min.css">
-  {{-- <link rel="stylesheet" href="{{ mix('/css/app.css') }}"> --}}
+  <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,700,600,300">
   @yield('stylesheets')
