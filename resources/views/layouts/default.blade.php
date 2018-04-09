@@ -17,7 +17,7 @@
 
   <title>@yield('title', 'UTD SGDA - Student Game Developer Alliance')</title>
 
-  <link rel="shortcut icon" href="{{ asset("assets/images/sgda-favicon.png") }}">
+  <link rel="shortcut icon" href="{{ asset("images/sgda-favicon.png") }}">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="/old-assets/css/sgda.min.css">
